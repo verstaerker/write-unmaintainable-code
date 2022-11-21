@@ -17,6 +17,8 @@
 
 ## Tools to create unmaintainable code
 
+Writing code is all about naming things. If you follow some basic rules you can easily raise the complexity of the code you write.
+
 ### Naming
 
 #### Use single letters, symbols or accented letters
@@ -27,7 +29,7 @@ Note: Number might not be supported depending on environment 😔 - Common lette
 
 #### Use abbreviation or A.C.R.O.N.Y.M.S.
 
-> `col, el, gt, arg, obj, opts, conf, md, imo, bg, chk, ge`
+> `w/, col, el, fn, gt, arg, obj, opts, conf, md, imo, bg, chk, ge`
 
 At best, these have two or more meanings depending on context.
 
@@ -74,7 +76,7 @@ function getDistanceForTwoLocationsInKm(location1, location2) {
   const lon1 = location1.lon;
   const lat2 = location2.lat;
   const lon2 = location2.lon;
-  const earthRadius = 6371;
+  const earthRadius = 6_371;
   const latRadius = convertDegreeToRadius(lat2 - lat1);
   const lonRadius = convertDegreeToRadius(lon2 - lon1);
   const squarehalfChordLength =
@@ -117,3 +119,141 @@ function retDisFAB(sta, sto) {
 ```
 </details>
 
+### Comments
+
+Let's be honest: comments are useless. So at least use them to create as much confusion as possible.
+
+#### Write lying or nonsense comments
+
+> ```js
+> /**
+> * Map products to be displayed in cart list.
+> */
+> function calculateGrossPrice() {}
+> ```
+
+> ```js
+> /**
+>  * Make snafucated.
+>  */
+> function makeSnafucated() {}
+> ```
+ 
+#### Document the obvious
+
+> `i++; // Add '1' to 'i'.`
+> 'const products = cart.getProducts(); // The products of the current cart.'
+
+#### Use comments instead of variables
+
+> `return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes`
+
+
+#### Document how, not why
+
+> `if (product.isAvailable !== true) { // Check if product is available.`
+
+#### Use multiple code formats without logic
+
+```js
+/* Some men just want to watch the world burn. */
+
+// Some men just want to watch the world burn.
+
+/**
+ * Some men just want to watch the world burn.
+ */
+
+////// Some men just want to watch the world burn.
+
+//
+// Some men just want to watch the world burn.
+//
+
+/** Some men just want to watch the world burn. **/
+```
+
+#### Lastly, you can also apply anything for the 'Naming' section.
+
+> `// Sm3 M3n jst want    to WaTch THE WORLD BURN.`
+
+#### Example
+
+<details>
+<summary>Show</summary>
+
+### Bad
+
+```js
+function convertDegreeToRadius(degreeValue) {
+  return degreeValue * Math.PI / 180;
+}
+
+function getDistanceForTwoLocationsInKm(location1, location2) {
+  const lat1 = location1.lat;
+  const lon1 = location1.lon;
+  const lat2 = location2.lat;
+  const lon2 = location2.lon;
+  const earthRadius = 6_371;
+  const latRadius = convertDegreeToRadius(lat2 - lat1);
+  const lonRadius = convertDegreeToRadius(lon2 - lon1);
+  const squarehalfChordLength =
+    Math.sin(latRadius / 2) * Math.sin(latRadius / 2) +
+    Math.cos(convertDegreeToRadius(lat1)) * Math.cos(convertDegreeToRadius(lat2)) *
+    Math.sin(lonRadius / 2) * Math.sin(lonRadius / 2);
+
+  const angularDistance = 2 * Math.atan2(Math.sqrt(squarehalfChordLength), Math.sqrt(1 - squarehalfChordLength));
+  
+  return earthRadius * angularDistance;
+}
+```
+
+### Good
+
+```js
+/**
+ * Multiplies the value with Pi and divides it by 180.
+ * 
+ * @param {string} degreeValue - A value.
+ * 
+ * @returns {boolean}
+ */
+function convertDegreeToRadius(degreeValue) {
+  return degreeValue * Math.PI / 180; // Pi ≈ 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
+}
+
+/***********
+ * @returns {number}
+ * @param {object} location1 - The first city.
+ * @param {array} location2 - The second city.
+ * 
+ * Calculates the traveling time between two cities.
+ ***********/
+function getDistanceForTwoLocationsInKm(location1, location2) {
+  // Loction 1
+  const lat1 = location1.lat;
+  const lon1 = location1.lon;
+  
+  // Location 2
+  const lat2 = location2.lat;
+  const lon2 = location2.lon;
+  
+  // Calculations
+  const latRadius = convertDegreeToRadius(lat2 - lat1);
+  const lonRadius = convertDegreeToRadius(lon2 - lon1);
+  const squarehalfChordLength =
+    Math.sin(latRadius / 2) * Math.sin(latRadius / 2) +
+    Math.cos(convertDegreeToRadius(lat1)) * Math.cos(convertDegreeToRadius(lat2)) *
+    Math.sin(lonRadius / 2) * Math.sin(lonRadius / 2);
+
+  return 6371 * 2 * Math.atan2(Math.sqrt(squarehalfChordLength), Math.sqrt(1 - squarehalfChordLength)); // Earth radius * angular distance
+}
+```
+
+### Additional hints
+
+#### Don't use linebreaks if you don't have to.
+
+> `const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));`
+ 
+#### Always fight against TypeScript
