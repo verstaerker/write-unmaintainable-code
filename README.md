@@ -146,7 +146,7 @@ i++; // Add '1' to 'i'.
 ```
 
 ```js
-const products = cart.getProducts(); // The products of the current cart.
+const cartProducts = cart.getProducts(); // The products of the current cart.
 ```
 
 #### Use comments instead of variables
@@ -183,7 +183,7 @@ if (product.isAvailable !== true) { // Check if product is available.
 
 #### Lastly, you can also apply anything for the 'Naming' section.
 
-> `// Sm3 M3n jst want    to WaTch THE WORLD BURN.`
+`// Sm3 M3n jst want    to WaTch THE WORLD BURN.`
 
 #### Example
 
@@ -262,6 +262,8 @@ function getDistanceForTwoLocationsInKm(location1, location2) {
 
 #### Don't use linebreaks if you don't have to.
 
-> `const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));`
+```js
+const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));
+```
  
 #### Always fight against TypeScript
