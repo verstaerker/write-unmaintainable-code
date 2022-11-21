@@ -23,41 +23,41 @@ Writing code is all about naming things. If you follow some basic rules you can 
 
 #### Use single letters, symbols or accented letters
 
-> `a, b, c, 🍬, 𝘼, 𝟙. í, ä`
+`a, b, c, 🍬, 𝘼, 𝟙. í, ä`
 
 Note: Number might not be supported depending on environment 😔 - Common letters like `i` for the index in loops should be replaced with non standard ones.
 
 #### Use abbreviation or A.C.R.O.N.Y.M.S.
 
-> `w/, col, el, fn, gt, arg, obj, opts, conf, md, imo, bg, chk, ge`
+`w/, col, el, fn, gt, arg, obj, opts, conf, md, imo, bg, chk, ge`
 
 At best, these have two or more meanings depending on context.
 
 #### Use foreign, made up or lesser known, alternative words with the same meaning 
 
-> `reprezenti, opcioj, grid, expense, humptyDumpty`
+`reprezenti, opcioj, grid, expense, humptyDumpty`
 
 Very effective if you alternate between different variants or languages.
 
 #### Misspell everything
 
-> `reandom, eveerything, everyting, evrything, vaule, vlaue, vale`
+`reandom, eveerything, everyting, evrything, vaule, vlaue, vale`
 
 This also creates a big variety of words you can use without conflicting names.
 
 #### Use words that are hard to read and write or/and also look different when used in plural
 
-> `specificity, specificities, status, status, internalization, internalisation`
+`specificity, specificities, status, status, internalization, internalisation`
 
 #### Use random capitalization or format
 
-> `comPutdyNamIcValuE, get_distance_from_london, calculate-distance-to-moon, valueA, valuea`
+`comPutdyNamIcValuE, get_distance_from_london, calculate-distance-to-moon, valueA, valuea`
 
 You can combine all these methods to create an even greater variety: `com_PutdyNamic-value`
 
 #### Use local variables to shadow global/reserved words
 
-> `window, Function, Default, float, boolean`
+`window, Function, Default, float, boolean`
 
 #### Example
 
@@ -125,33 +125,41 @@ Let's be honest: comments are useless. So at least use them to create as much co
 
 #### Write lying or nonsense comments
 
-> ```js
-> /**
-> * Map products to be displayed in cart list.
-> */
-> function calculateGrossPrice() {}
-> ```
+```js
+/**
+* Map products to be displayed in cart list.
+*/
+function calculateGrossPrice() {}
+```
 
-> ```js
-> /**
->  * Make snafucated.
->  */
-> function makeSnafucated() {}
-> ```
+```js
+/**
+ * Make snafucated.
+ */
+function makeSnafucated() {}
+```
  
 #### Document the obvious
 
-> `i++; // Add '1' to 'i'.`
-> 'const products = cart.getProducts(); // The products of the current cart.'
+```js 
+i++; // Add '1' to 'i'.
+```
+
+```js
+const products = cart.getProducts(); // The products of the current cart.
+```
 
 #### Use comments instead of variables
 
-> `return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes`
-
+```js
+return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+```
 
 #### Document how, not why
 
-> `if (product.isAvailable !== true) { // Check if product is available.`
+```js 
+if (product.isAvailable !== true) { // Check if product is available.
+```
 
 #### Use multiple code formats without logic
 
