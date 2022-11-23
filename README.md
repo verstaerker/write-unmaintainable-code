@@ -15,11 +15,53 @@
   ```
 </details>
 
+## Your worst enemies
+
+Before we step into battle, you should make sure you know your worst enemies. Any of this tools make it very hard to create professional code if you can't define your own, professional, ruleset but have to follow project or team preferences.
+
+### Prettier
+
+This "opinionated" code formatter will destroy all your efforts you put into format the code to your needs.
+
+- Forces code style standards without (almost) any option for configuration
+- Will run in Git hooks if you're not careful
+- This monstrosity can even run in a CI pipeline and prevent merges
+
+### ESLint
+
+Similar to Prettier, ESLint will also force you to follow certain standards or best practices.
+
+- Forces best practices and code format standards
+- Will run in Git hooks if you're not careful
+- Will also prevent CI pipelines from succeeding
+
+### TypeScript
+
+Forces you to use strict types. This can be especially annoying if you follow a reuse and recycle philosophy.
+
+### Modern editors
+
+Unfortunately, modern editors like VS Code and PhpStorm help newbies to easier navigate in code that was written by professionals.
+
+- Spell checks
+- Autocompletion
+- Go to definition/usage
+- Auto formatting
+- Type hints
+- Code hints
+
+### EditorConfig
+
+Will "remote control" your IDE to follow basic code style patterns.
+
+- Indent type
+- Indent size
+
 ## Tools to create unmaintainable code
 
-Writing code is all about naming things. If you follow some basic rules you can easily raise the complexity of the code you write.
-
 ### Naming
+
+Writing code is all about naming things. If you follow some basic rules you can easily raise the complexity of the code you write.
 
 #### Use single letters, symbols or accented letters
 
@@ -265,5 +307,17 @@ function getDistanceForTwoLocationsInKm(location1, location2) {
 ```js
 const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));
 ```
- 
-#### Always fight against TypeScript
+
+#### Write unhelpful, misleading or nonsense commit messages
+
+```text
+fixup!
+update
+fixup
+fixup
+fixup
+template updates
+review changes
+Fixes tipo
+```
+
