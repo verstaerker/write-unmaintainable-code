@@ -31,7 +31,7 @@ This "opinionated" code formatter will destroy all your efforts you put into for
 
 Similar to Prettier, ESLint will also force you to follow certain standards or best practices.
 
-- Forces best practices and code format standards
+- Forces best practices and code style standards
 - Will run in Git hooks if you're not careful
 - Will also prevent CI pipelines from succeeding
 
