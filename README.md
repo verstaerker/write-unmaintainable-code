@@ -57,19 +57,31 @@ Will "remote control" your IDE to follow basic code style patterns.
 - Indent type
 - Indent size
 
+### Unit tests
+
+TBD
+
+## Fight against enemies
+
+- Ignore the local setup instructions
+- Skip Git hooks on commit and push
+- Ignore pipeline results
+- Fight against opinions
+- Use your own editor setup
+
 ## Tools to create unmaintainable code
 
 ### Naming
 
 Writing code is all about naming things. If you follow some basic rules you can easily raise the complexity of the code you write.
 
-#### Use single letters, symbols or accented letters
+#### Use single letters, symbols, emojis or accented letters
 
 `a, b, c, 🍬, 𝘼, 𝟙. í, ä`
 
 Note: Number might not be supported depending on environment 😔 - Common letters like `i` for the index in loops should be replaced with non standard ones.
 
-#### Use abbreviation or A.C.R.O.N.Y.M.S.
+#### Use abbreviation and A.C.R.O.N.Y.M.S.
 
 `w/, col, el, fn, gt, arg, obj, opts, conf, md, imo, bg, chk, ge`
 
@@ -87,11 +99,11 @@ Very effective if you alternate between different variants or languages.
 
 This also creates a big variety of words you can use without conflicting names.
 
-#### Use words that are hard to read and write or/and also look different when used in plural
+#### Use hard to write and read names or/and also look different in plural
 
 `specificity, specificities, status, status, internalization, internalisation`
 
-#### Use random capitalization or format
+#### Use random capitalization or formats
 
 `comPutdyNamIcValuE, get_distance_from_london, calculate-distance-to-moon, valueA, valuea`
 
@@ -107,6 +119,30 @@ You can combine all these methods to create an even greater variety: `com_PutdyN
 <summary>Show</summary>
 
 ### Bad
+
+```js
+/**
+ * Filters an array, by calling the given condition callback for each entry.
+ *
+ * @param {array} sourceArray - The to be filtered array.
+ * @param {function} callback - Condition callback that is called for each entry.
+ *
+ * @returns {*[]}
+ */
+function filter(sourceArray, callback) {
+  const result = [];
+
+  for (let index = 0; index < sourceArray.length; index += 1) {
+    const value = sourceArray[index];
+
+    if (callback(value, index, sourceArray)) {
+      result.push(value);
+    }
+  }
+
+  return result;
+}
+```
 
 ```js
 function convertDegreeToRadius(degreeValue) {

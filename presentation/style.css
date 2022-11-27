@@ -14,3 +14,7 @@ ul {
   justify-content: center;
   height: 100%;
 }
+
+.slidev-vclick-hidden-explicitly {
+  display: none;
+}
