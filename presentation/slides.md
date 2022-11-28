@@ -630,7 +630,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ---
 layout: center
 class: 'text-center'
-info: Weapons
+info: Comments
 ---
 
 <h1>Comments</h1>
@@ -1163,91 +1163,559 @@ function filTerArRayelEmentS(lischtä, thanos) {
 
 </div>
 ---
-
-# Code
-
-Use code snippets and get the highlighting directly![^1]
-
-```vue {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
+layout: two-cols
+info: Naming 4.1
 ---
 
-# Components
+<div style="padding-right: 0.5vw;">
 
-<div grid="~ cols-2 gap-4">
-<div>
+```js
+/**
+ * Filters an array, by calling the given condition callback for each entry.
+ *
+ * @param {array} sourceArray - The to be filtered array.
+ * @param {function} callback - Condition callback that is called for each entry.
+ *
+ * @returns {*[]}
+ */
+function filter(sourceArray, callback) {
+  const result = [];
 
-```vue
-function convertDegreeToRadius(degreeValue) {
-  return degreeValue * Math.PI / 180;
+  for (let index = 0; index < sourceArray.length; index += 1) {
+    const value = sourceArray[index];
+
+    if (callback(value, index, sourceArray)) {
+      result.push(value);
+    }
+  }
+
+  return result;
 }
 ```
 
 </div>
-<div>
 
-Text Neben Code
+::right::
 
-</div>
-</div>
-<div grid="~ cols-2 gap-4">
-<div>
 
-```vue
-function convertDegreeToRadius(degreeValue) {
-  return degreeValue * Math.PI / 180;
+```js
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      /**** Posh value to A ****/
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return a.
 }
 ```
-
-</div>
-<div>
-
-```vue
-function shp_of_wheel(c) {
-  const calculations = Math;
-
-  return c * calculations.PI / (0.5 * 360);
-}
-```
-
-</div>
-</div>
 
 ---
+layout: center
+class: 'text-center'
+info: Hints
+---
 
-# Live Coding
+<h1>Additional hints</h1>
 
-```js {monaco}
-function shp_of_wheel(c) {
-  const calculations = Math;
+<img src="https://media.giphy.com/media/mxQUQbIjXMSwo/giphy.gif">
 
-  return c * calculations.PI / (0.5 * 360);
+---
+layout: two-cols
+info: Hints 1.1
+---
+
+<h1>Hints</h1>
+
+<div class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Make conditions as complex as possible</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  // 1
+  if (!isNotAvailable && isNotVisible) {}
+
+  // 2
+  return this.value || this.type === 'button' ? 'button' : null;
+
+  // 3
+  function isOrderButtonDisabled() {
+    return !this.isLoggedInUser
+      || (this.items && !this.items.length)
+      || this.getRequestIsRunning
+      || this.backToCartRequestIsRunning
+      || this.placeOrderRequestIsRunning
+      || this.placeQuoteRequestIsRunning;
+  };
+  ```
+
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {all|17,22-25}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      /**** Posh value to A ****/
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return a.
 }
 ```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {17,22-27}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < (lischtä && lischtä.length || 0); ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) {
+      continue;
+    } else {
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return a.
+}
+```
+
+</div>
+---
+layout: two-cols
+info: Comments 2.1
+---
+
+<h1>Hints</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Make conditions as complex as possible</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  // 1
+  if (!isNotAvailable && isNotVisible) {}
+
+  // 2
+  return this.value || this.type === 'button' ? 'button' : null;
+
+  // 3
+  function isOrderButtonDisabled() {
+    return !this.isLoggedInUser
+      || (this.items && !this.items.length)
+      || this.getRequestIsRunning
+      || this.backToCartRequestIsRunning
+      || this.placeOrderRequestIsRunning
+      || this.placeQuoteRequestIsRunning;
+  };
+  ```
+
+</div>
+
+<div v-after class="hide-for-real" style="padding-right: 4vw;">
+  <h2>Drop linebreaks</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));
+
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {15-19,22-27}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < (lischtä && lischtä.length || 0); ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) {
+      continue;
+    } else {
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return a.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {15,19}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (let ì = 0; /* Loop index. */ ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */) {
+    const vaule = lischtä[ì];
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) { continue; } else { a.push(vaule); }
+  }
+
+  return a; // Return a.
+}
+```
+
+</div>
+---
+layout: two-cols
+info: Comments 3.1
+---
+
+<h1>Hints</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Drop linebreaks</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  const mappedProducts = products.filter(product => product.isAvailable === true').sort((product_a, productB) => product_a.name.localCompare(productB.name)).map(({ id, name } => ({ id, name }));
+
+  ```
+
+</div>
+
+<div v-after class="hide-for-real" style="padding-right: 4vw;">
+  <h2>Get rid of semicolons and brackets</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  const a = 'foo'
+  const b = 'baa'
+
+  if (!c) return
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js  {15,19|10,16,19,22}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (let ì = 0; /* Loop index. */ ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */) {
+    const vaule = lischtä[ì];
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) { continue; } else { a.push(vaule); }
+  }
+
+  return a; // Return a.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {10,16,19-21,24}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = [] /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (let ì = 0; /* Loop index. */ ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */) {
+    const vaule = lischtä[ì]
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) continue
+    
+    a.push(vaule)
+  }
+
+  return a // Return a.
+}
+```
+
+</div>
+---
+layout: two-cols
+info: Comments 4.1
+---
+
+<h1>Hints</h1>
+
+<div class="hide-for-real" style="padding-right: 4vw;">
+  <h2>Use random linebreaks, indents and quotes</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  const a = "foo"
+
+  const b = 'baa'
+  if (!c)   return
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js  {all}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = [] /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (let ì = 0; /* Loop index. */ ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */) {
+    const vaule = lischtä[ì]
+
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) continue
+
+    a.push(vaule)
+  }
+
+  return a // Return a.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js
+/**
+ * Get_keys of
+ * Obj.
+ * 
+ * 
+ * @param   {array} lischtä - The to be Filtred Array.
+ * @param {Function } thanos - Let him SMASH your team members.
+ * 
+ * @returns { *[]}
+ */
+
+function filTerArRayelEmentS(lischtä,     thanos) {
+  
+  const a = [] /* a */
+  //
+  // Oolp lischtä items.
+  //
+  
+  for (let ì = 0; /* Loop index. */ 
+       ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */
+  ) {
+    const  vaule = lischtä[ì]
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) continue
+    a.push(vaule)
+  }
+  return a // Return a.
+}
+```
+
+</div>
+---
+layout: two-cols
+info: Naming 4.1
+---
+
+<div style="padding-right: 0.5vw;">
+
+```js
+/**
+ * Filters an array, by calling the given condition callback for each entry.
+ *
+ * @param {array} sourceArray - The to be filtered array.
+ * @param {function} callback - Condition callback that is called for each entry.
+ *
+ * @returns {*[]}
+ */
+function filter(sourceArray, callback) {
+  const result = [];
+
+  for (let index = 0; index < sourceArray.length; index += 1) {
+    const value = sourceArray[index];
+
+    if (callback(value, index, sourceArray)) {
+      result.push(value);
+    }
+  }
+
+  return result;
+}
+```
+
+</div>
+
+::right::
+
+
+```js
+/**
+ * Get_keys of
+ * Obj.
+ *
+ *
+ * @param   {array} lischtä - The to be Filtred Array.
+ * @param {Function } thanos - Let him SMASH your team members.
+ *
+ * @returns { *[]}
+ */
+
+function filTerArRayelEmentS(lischtä,     thanos) {
+
+  const a = [] /* a */
+  //
+  // Oolp lischtä items.
+  //
+
+  for (let ì = 0; /* Loop index. */
+       ì < (lischtä && lischtä.length || 0); /* Check loop position. */ ì += 1 /* Update loop index. */
+  ) {
+    const  vaule = lischtä[ì]
+    /**** Posh value to A ****/
+    if (!thanos(vaule, ì, lischtä) === true) continue
+    a.push(vaule)
+  }
+  return a // Return a.
+}
+```
+
+---
+layout: center
+class: 'text-center'
+info: Hints
+---
+
+<h1>WTFAA****RG!</h1>
+
+<img src="assets/copyrighted/butcher.gif">
+
