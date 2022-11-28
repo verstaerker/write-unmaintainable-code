@@ -204,13 +204,21 @@ function filter(sourceArray, callback) {
 ```
 
 ---
+layout: center
+class: 'text-center'
+info: Weapons
+---
+
+<h1>Naming</h1>
+
+---
 layout: two-cols
 info: Naming 1.1
 ---
 
 <h1>Naming</h1>
 
-<div class="center-vertical" style="padding-right: 4vw;">
+<div class="" style="padding-right: 4vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -257,7 +265,7 @@ info: Naming 1.2
 
 <h1>Naming</h1>
 
-<div class="center-vertical" style="padding-right: 4vw;">
+<div class="" style="padding-right: 4vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -300,7 +308,7 @@ info: Naming 2.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="center-vertical" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 4vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -310,7 +318,7 @@ info: Naming 2.1
   ```
 </div>
 
-<div v-after class="center-vertical" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 4vw;">
   <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -356,7 +364,7 @@ info: Naming 2.2
 
 <h1>Naming</h1>
 
-<div v-click-hide class="center-vertical" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 4vw;">
   <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -367,13 +375,13 @@ info: Naming 2.2
   ```
 </div>
 
-<div v-after class="center-vertical" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 4vw;">
   <h2>Use foreign, made up or lesser known, alternative words with the same meaning</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```text
-  reprezenti, opcioj, werte,
+  reprezenti, opcioj, lischtä,
   grid, expense, humptyDumpty
   ```
 </div>
@@ -412,18 +420,18 @@ info: Naming 3.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="center-vertical" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 4vw;">
   <h2>Use foreign, made up or lesser known, alternative words with the same meaning</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```text
-  reprezenti, opcioj,
+  reprezenti, opcioj, lischtä,
   grid, expense, humptyDumpty
   ```
 </div>
 
-<div v-after class="center-vertical" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 4vw;">
   <h2>Misspell everything</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -467,7 +475,7 @@ info: Naming 4.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="center-vertical" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 4vw;">
   <h2>Misspell everything</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -478,7 +486,7 @@ info: Naming 4.1
   ```
 </div>
 
-<div v-after class="center-vertical" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 4vw;">
   <h2>Use random capitalization or formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -522,7 +530,7 @@ info: Naming 4.1
 
 <h1>Naming</h1>
 
-<div class="center-vertical" style="padding-right: 4vw;">
+<div class="" style="padding-right: 4vw;">
   <h2>Use random capitalization or formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -619,7 +627,541 @@ function filTerArRayelEmentS(lischtä, thanos) {
 }
 ```
 
+---
+layout: center
+class: 'text-center'
+info: Weapons
+---
 
+<h1>Comments</h1>
+
+<div v-click>
+
+```
+<!-- TODO: update this -->
+```
+
+</div>
+---
+layout: center
+info: Comments 1.1
+---
+
+
+```js
+/**
+ * Filters an array, by calling the given condition callback for each entry.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Condition callback that is called for each entry.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  for (let ì = 0; ì < lischtä.length; ì += 1) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule);
+    }
+  }
+
+  return res;
+}
+```
+
+---
+layout: two-cols
+info: Comments 2.1
+---
+
+<h1>Comments</h1>
+
+<div class="" style="padding-right: 4vw;">
+  <h2>Write lying or nonsense comments</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  /**
+   * Make snafucated.
+   */
+  function makeSnafucated() {}
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {all|2,5}
+/**
+ * Filters an array, by calling the given condition callback for each entry.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Condition callback that is called for each entry.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  for (let ì = 0; ì < lischtä.length; ì += 1) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule);
+    }
+  }
+
+  return res;
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {2,5}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  for (let ì = 0; ì < lischtä.length; ì += 1) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule);
+    }
+  }
+
+  return res;
+}
+```
+
+</div>
+---
+layout: two-cols
+info: Comments 3.1
+---
+
+<h1>Comments</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Write lying or nonsense comments</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  /**
+   * Make snafucated.
+   */
+  function makeSnafucated() {}
+  ```
+</div>
+
+<div v-after class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Document the obvious. Document the "how", not "why".</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  i++; // Add '1' to 'i'.
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {2,5|12,16,20}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  for (let ì = 0; ì < lischtä.length; ì += 1) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule);
+    }
+  }
+
+  return res;
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {12-16,20}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  // Loop lischtä items.
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; // Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule); // Push value.
+    }
+  }
+
+  return res; // Return result.
+}
+```
+
+</div>
+
+---
+layout: two-cols
+info: Comments 4.1
+---
+
+<h1>Comments</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Document the obvious. Document the "how", not "why".</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  i++; // Add '1' to 'i'.
+  ```
+</div>
+
+<div v-after class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Use comments instead of variables</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+  ```
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {12-16,20|10,21,25}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const res = [];
+
+  // Loop lischtä items.
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; // Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      res.push(vaule); // Push value.
+    }
+  }
+
+  return res; // Return result.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {10,21,25}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; // ResultList.
+
+  // Loop lischtä items.
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; // Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      a.push(vaule); // Push value to ResultList.
+    }
+  }
+
+  return a; // Return ResultList.
+}
+```
+</div>
+
+---
+layout: two-cols
+info: Comments 5.1
+---
+
+<h1>Comments</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Use comments instead of variables</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+  ```
+</div>
+
+<div v-after class="hide-for-real" style="padding-right: 4vw;">
+  <h2>Use various formats</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  /* Some men just want to watch the world burn. */
+  
+  // Some men just want to watch the world burn.
+  
+  /**
+   * Some men just want to watch the world burn.
+   */
+  
+  //
+  // Some men just want to watch the world burn.
+  //
+  
+  /** Some men just want to watch the world burn. **/
+  ```
+
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {10,21,25|10,12,14}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; // ResultList.
+
+  // Loop lischtä items.
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; // Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      a.push(vaule); // Push value to ResultList.
+    }
+  }
+
+  return a; // Return ResultList.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {10,12-14,17,23}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* ResultList. */
+
+  //
+  // Loop lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      /**** Push value to ResultList. ****/
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return ResultList.
+}
+```
+
+</div>
+
+---
+layout: two-cols
+info: Comments 5.1
+---
+
+<h1>Comments</h1>
+
+<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+  <h2>Use various formats</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  /* Some men just want to watch the world burn. */
+  
+  // Some men just want to watch the world burn.
+  
+  /**
+   * Some men just want to watch the world burn.
+   */
+  
+  //
+  // Some men just want to watch the world burn.
+  //
+  
+  /** Some men just want to watch the world burn. **/
+  ```
+
+</div>
+
+<div v-after class="hide-for-real" style="padding-right: 4vw;">
+  <h2>Finally, you can also apply anything from the 'Naming' section.</h2>
+  <br>&nbsp;
+  <br>&nbsp;
+
+  ```js
+  // Sm3 M3n jst want
+  //      to WaTch THE WORLD BURN.
+  ```
+
+</div>
+
+::right::
+
+<div v-click-hide class="hide-for-real">
+
+```js {10,12-14,17,23|2,4,5,10,13,23,28}
+/**
+ * Get keys of object.
+ *
+ * @param {array} lischtä - The to be filtered array.
+ * @param {function} thanos - Let him smash your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* ResultList. */
+
+  //
+  // Loop lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      /**** Push value to ResultList. ****/
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return ResultList.
+}
+```
+
+</div>
+
+<div v-after class="hide-for-real">
+
+```js {2,4,5,10,13,23,28}
+/**
+ * Get_keys of Obj.
+ *
+ * @param {array} lischtä - The to be Filtred Array.
+ * @param {Function} thanos - Let him SMASH your team members.
+ *
+ * @returns {*[]}
+ */
+function filTerArRayelEmentS(lischtä, thanos) {
+  const a = []; /* a */
+
+  //
+  // Oolp lischtä items.
+  //
+  for (
+    let ì = 0; // Loop index.
+    ì < lischtä.length; ////// Check loop position.
+    ì += 1 // Update loop index.
+  ) {
+    const vaule = lischtä[ì];
+
+    if (thanos(vaule, ì, lischtä)) {
+      /**** Posh value to A ****/
+      a.push(vaule);
+    }
+  }
+
+  return a; // Return a.
+}
+```
+
+</div>
 ---
 
 # Code

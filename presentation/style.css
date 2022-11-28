@@ -18,3 +18,7 @@ ul {
 .slidev-vclick-hidden-explicitly {
   display: none;
 }
+
+.slidev-vclick-hidden.hide-for-real {
+  display: none;
+}

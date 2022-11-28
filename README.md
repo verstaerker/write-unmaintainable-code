@@ -239,7 +239,7 @@ return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
 if (product.isAvailable !== true) { // Check if product is available.
 ```
 
-#### Use multiple code formats without logic
+#### Use multiple comment formats without logic
 
 ```js
 /* Some men just want to watch the world burn. */
@@ -259,7 +259,7 @@ if (product.isAvailable !== true) { // Check if product is available.
 /** Some men just want to watch the world burn. **/
 ```
 
-#### Lastly, you can also apply anything for the 'Naming' section.
+#### Finally, you can also apply anything from the 'Naming' section.
 
 `// Sm3 M3n jst want    to WaTch THE WORLD BURN.`
 
