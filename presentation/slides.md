@@ -1717,5 +1717,4 @@ info: Hints
 
 <h1>WTFAA****RG!</h1>
 
-<img src="assets/copyrighted/butcher.gif">
-
+<img src="https://media.giphy.com/media/LTM9zeisAfX9xQbz8Y/giphy.gif">
