@@ -14,12 +14,45 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-layout: center
-class: 'text-center'
+layout: image-left
+image: ./assets/patric.jpg
 ---
-<h1>About me</h1>
+<h1>Patric Eberle</h1>
 
-TBD
+Senior Frontend Developer and Teamlead
+
+<picture style="display: block; margin-top: 2vh;">
+ <source media="prefers-color-scheme: dark" src="/assets/logo-valantic-white.svg">
+ <source media="prefers-color-scheme: light" src="/assets/logo-valantic.svg">
+ <img src="/assets/logo-valantic-white.svg">
+</picture>
+
+<ul style="display: flex; align-items:center; list-style: none; padding: 0; margin: 8vh 0 0 0; gap: 1vw;">
+  <li style="margin: 0; padding: 0;">🎲</li>
+  <li style="margin: 0; padding: 0;">🏃🏻‍♂️</li>
+  <li style="margin: 0; padding: 0;">🧘🏻‍♂️</li>
+  <li style="margin: 0; padding: 0;">📺</li>
+</ul>
+
+<ul style="list-style: none; padding: 0; margin: 2vh 0 0 0; gap: 1vw; font-size: 1em;">
+  <li style="margin: 0; padding: 0 0 1vh 0;">
+    <a href="https://github.com/patric-eberle">https://github.com/patric-eberle</a>
+  </li>
+  <li style="margin: 0; padding: 0 0 1vh 0;">
+    <a href="https://www.linkedin.com/in/patric-eberle-22518911a">https://www.linkedin.com/in/patric-eberle-22518911a</a>
+  </li>
+</ul>
+
+---
+layout: center
+---
+
+#
+<img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
+
+<!--
+The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+-->
 
 ---
 layout: center
@@ -76,8 +109,8 @@ info: ESLint 2
 ::right::
 
 <ul class="center-vertical">
-  <li>Forces best practices</li>
-  <li v-click>Forces code styles</li>
+  <li>Enforces best practices</li>
+  <li v-click>Enforces code styles</li>
   <li v-click>Supports `--fix`</li>
   <li v-click>Supports Git Hooks</li>
   <li v-click>Supports CI</li>
@@ -114,11 +147,11 @@ class: 'text-center'
 info: IDE 1
 ---
 
-<div style="display: flex; gap: 4vw;">
-  <img src="/assets/vscode.svg" style="width: 8vw; height: auto;">
-  <img src="/assets/phpstorm.svg" style="width: 8vw; height: auto;">
-  <img src="/assets/webstorm.svg" style="width: 8vw; height: auto;">
-  <span style="font-size: 8vw;">…</span>
+<div style="display: flex; gap: 2vw;">
+  <img src="/assets/vscode.svg" style="width: 3vw; height: auto;">
+  <img src="/assets/phpstorm.svg" style="width: 3vw; height: auto;">
+  <img src="/assets/webstorm.svg" style="width: 3vw; height: auto;">
+  <span style="font-size: 3vw;">…</span>
 </div>
 
 ---
@@ -127,9 +160,9 @@ info: IDE 2
 ---
 
 <div class="center-horizontal center-vertical" style="gap: 3vh;">
-  <img src="/assets/vscode.svg" style="width: 5vw; height: auto;">
-  <img src="/assets/phpstorm.svg" style="width: 5vw; height: auto;">
-  <img src="/assets/webstorm.svg" style="width: 5vw; height: auto;">
+  <img src="/assets/vscode.svg" style="width: 6vh; height: auto;">
+  <img src="/assets/phpstorm.svg" style="width: 6vh; height: auto;">
+  <img src="/assets/webstorm.svg" style="width: 6vh; height: auto;">
 </div>
 
 ::right::
