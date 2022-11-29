@@ -2,7 +2,7 @@
 theme: seriph
 background: none
 highlighter: shiki
-lineNumbers: true
+lineNumbers: false
 layout: center
 ---
 
@@ -218,7 +218,7 @@ info: Naming 1.1
 
 <h1>Naming</h1>
 
-<div class="" style="padding-right: 4vw;">
+<div class="" style="padding-right: 2vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -265,7 +265,7 @@ info: Naming 1.2
 
 <h1>Naming</h1>
 
-<div class="" style="padding-right: 4vw;">
+<div class="" style="padding-right: 2vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -308,7 +308,7 @@ info: Naming 2.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 2vw;">
   <h2>Use single letters, symbols, emojis or accented letters</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -318,7 +318,7 @@ info: Naming 2.1
   ```
 </div>
 
-<div v-after class="" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 2vw;">
   <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -364,7 +364,7 @@ info: Naming 2.2
 
 <h1>Naming</h1>
 
-<div v-click-hide class="" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 2vw;">
   <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -375,7 +375,7 @@ info: Naming 2.2
   ```
 </div>
 
-<div v-after class="" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 2vw;">
   <h2>Use foreign, made up or lesser known, alternative words with the same meaning</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -420,7 +420,7 @@ info: Naming 3.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 2vw;">
   <h2>Use foreign, made up or lesser known, alternative words with the same meaning</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -431,13 +431,14 @@ info: Naming 3.1
   ```
 </div>
 
-<div v-after class="" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 2vw;">
   <h2>Misspell everything</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```text
-  reandom, eveerything, everyting, evrything, 
+  reandom, randem, 
+  eveerything, everyting, evrything, 
   vaule, vlaue, vale
   ```
 </div>
@@ -475,18 +476,19 @@ info: Naming 4.1
 
 <h1>Naming</h1>
 
-<div v-click-hide class="" style="padding-right: 4vw;">
+<div v-click-hide class="" style="padding-right: 2vw;">
   <h2>Misspell everything</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```text
-  reandom, eveerything, everyting, evrything, 
+  reandom, randem, 
+  eveerything, everyting, evrything, 
   vaule, vlaue, vale
   ```
 </div>
 
-<div v-after class="" style="padding-right: 4vw;">
+<div v-after class="" style="padding-right: 2vw;">
   <h2>Use random capitalization or formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -530,7 +532,7 @@ info: Naming 4.1
 
 <h1>Naming</h1>
 
-<div class="" style="padding-right: 4vw;">
+<div class="" style="padding-right: 2vw;">
   <h2>Use random capitalization or formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -679,7 +681,7 @@ info: Comments 2.1
 
 <h1>Comments</h1>
 
-<div class="" style="padding-right: 4vw;">
+<div class="" style="padding-right: 2vw;">
   <h2>Write lying or nonsense comments</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -756,7 +758,7 @@ info: Comments 3.1
 
 <h1>Comments</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Write lying or nonsense comments</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -769,7 +771,7 @@ info: Comments 3.1
   ```
 </div>
 
-<div v-after class=" hide-for-real" style="padding-right: 4vw;">
+<div v-after class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Document the obvious. Document the "how", not "why".</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -849,7 +851,7 @@ info: Comments 4.1
 
 <h1>Comments</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Document the obvious. Document the "how", not "why".</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -859,13 +861,13 @@ info: Comments 4.1
   ```
 </div>
 
-<div v-after class=" hide-for-real" style="padding-right: 4vw;">
+<div v-after class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Use comments instead of variables</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```js
-  return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+  return value * 1000 * 60; // Minutes * Milliseconds * Seconds = X Minutes
   ```
 </div>
 
@@ -943,17 +945,17 @@ info: Comments 5.1
 
 <h1>Comments</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Use comments instead of variables</h2>
   <br>&nbsp;
   <br>&nbsp;
 
   ```js
-  return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+  return value * 1000 * 60; // Minutes * Milliseconds * Seconds = X Minutes
   ```
 </div>
 
-<div v-after class="hide-for-real" style="padding-right: 4vw;">
+<div v-after class="hide-for-real" style="padding-right: 2vw;">
   <h2>Use various formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1054,7 +1056,7 @@ info: Comments 5.1
 
 <h1>Comments</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Use various formats</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1077,7 +1079,7 @@ info: Comments 5.1
 
 </div>
 
-<div v-after class="hide-for-real" style="padding-right: 4vw;">
+<div v-after class="hide-for-real" style="padding-right: 2vw;">
   <h2>Finally, you can also apply anything from the 'Naming' section.</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1247,7 +1249,7 @@ info: Hints 1.1
 
 <h1>Hints</h1>
 
-<div class=" hide-for-real" style="padding-right: 4vw;">
+<div class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Make conditions as complex as possible</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1354,7 +1356,7 @@ info: Comments 2.1
 
 <h1>Hints</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Make conditions as complex as possible</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1379,7 +1381,7 @@ info: Comments 2.1
 
 </div>
 
-<div v-after class="hide-for-real" style="padding-right: 4vw;">
+<div v-after class="hide-for-real" style="padding-right: 2vw;">
   <h2>Drop linebreaks</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1466,7 +1468,7 @@ info: Comments 3.1
 
 <h1>Hints</h1>
 
-<div v-click-hide class=" hide-for-real" style="padding-right: 4vw;">
+<div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
   <h2>Drop linebreaks</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1478,7 +1480,7 @@ info: Comments 3.1
 
 </div>
 
-<div v-after class="hide-for-real" style="padding-right: 4vw;">
+<div v-after class="hide-for-real" style="padding-right: 2vw;">
   <h2>Get rid of semicolons and brackets</h2>
   <br>&nbsp;
   <br>&nbsp;
@@ -1561,7 +1563,7 @@ info: Comments 4.1
 
 <h1>Hints</h1>
 
-<div class="hide-for-real" style="padding-right: 4vw;">
+<div class="hide-for-real" style="padding-right: 2vw;">
   <h2>Use random linebreaks, indents and quotes</h2>
   <br>&nbsp;
   <br>&nbsp;
