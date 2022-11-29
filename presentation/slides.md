@@ -104,7 +104,7 @@ info: TypeScript 2
 
 <ul class="center-vertical">
   <li>Superset of JS</li>
-  <li v-click>Forces strict types</li>
+  <li v-click>Enforces strict types</li>
   <li v-click>Improves code hinting</li>
 </ul>
 
@@ -148,7 +148,7 @@ layout: center
 info: Fight
 ---
 
-<h1>How to fight against enemies?</h1>
+<h1>How to fight enemies?</h1>
 <img src="https://media.giphy.com/media/WwC5VAvhHoH7EjCpPz/giphy.gif">
 
 ---
@@ -159,7 +159,7 @@ info: Fight
 <h1>How to fight against enemies?</h1>
 <ul class="center-vertical">
   <li>Ignore setup instructions</li>
-  <li v-click>Skip git hooks</li>
+  <li v-click>Skip Git Hooks</li>
   <li v-click>Ignore pipelines</li>
   <li v-click>Fight opinions</li>
   <li v-click>Use your own setup</li>
@@ -181,9 +181,9 @@ info: Weapons
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -232,9 +232,9 @@ info: Naming 1.1
 
 ```js {all|12-15}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -279,9 +279,9 @@ info: Naming 1.2
 
 ```js {12-15}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -319,7 +319,7 @@ info: Naming 2.1
 </div>
 
 <div v-after class="" style="padding-right: 4vw;">
-  <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
+  <h2>Use abbreviations and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
 
@@ -335,9 +335,9 @@ info: Naming 2.1
 
 ```js {12-15|10,16,20}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -365,7 +365,7 @@ info: Naming 2.2
 <h1>Naming</h1>
 
 <div v-click-hide class="" style="padding-right: 4vw;">
-  <h2>Use abbreviation and A.C.R.O.N.Y.M.S.</h2>
+  <h2>Use abbreviations and A.C.R.O.N.Y.M.S.</h2>
   <br>&nbsp;
   <br>&nbsp;
 
@@ -391,9 +391,9 @@ info: Naming 2.2
 
 ```js {10,16,20|4,5,9,12-15}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -446,9 +446,9 @@ info: Naming 3.1
 
 ```js {4,5,9,12-15|13,15,16}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -502,9 +502,9 @@ info: Naming 4.1
 
 ```js {13,15,16|9}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -546,9 +546,9 @@ info: Naming 4.1
 
 ```js {9}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -576,9 +576,9 @@ info: Naming 4.1
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -605,9 +605,9 @@ function filter(sourceArray, callback) {
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -650,9 +650,9 @@ info: Comments 1.1
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -680,7 +680,7 @@ info: Comments 2.1
 <h1>Comments</h1>
 
 <div class="" style="padding-right: 4vw;">
-  <h2>Write lying or nonsense comments</h2>
+  <h2>Write lying or nonsensical comments</h2>
   <br>&nbsp;
   <br>&nbsp;
 
@@ -698,9 +698,9 @@ info: Comments 2.1
 
 ```js {all|2,5}
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -728,7 +728,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -787,7 +787,7 @@ info: Comments 3.1
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -815,7 +815,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -865,7 +865,7 @@ info: Comments 4.1
   <br>&nbsp;
 
   ```js
-  return value * 1000 * 60; // Minutes * Miliseconds * Seconds = X Minutes
+  return value * 1000 * 60; // minutes * milliseconds * seconds = X minutes
   ```
 </div>
 
@@ -877,7 +877,7 @@ info: Comments 4.1
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -910,7 +910,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -984,7 +984,7 @@ info: Comments 5.1
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -1017,7 +1017,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -1097,7 +1097,7 @@ info: Comments 5.1
 /**
  * Get keys of object.
  *
- * @param {array} lischtä - The to be filtered array.
+ * @param {array} lischtä - The array to be filtered.
  * @param {function} thanos - Let him smash your team members.
  *
  * @returns {*[]}
@@ -1171,9 +1171,9 @@ info: Naming 4.1
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
@@ -1562,7 +1562,7 @@ info: Comments 4.1
 <h1>Hints</h1>
 
 <div class="hide-for-real" style="padding-right: 4vw;">
-  <h2>Use random linebreaks, indents and quotes</h2>
+  <h2>Use random linebreaks, indents and quotation marks</h2>
   <br>&nbsp;
   <br>&nbsp;
 
@@ -1651,9 +1651,9 @@ info: Naming 4.1
 
 ```js
 /**
- * Filters an array, by calling the given condition callback for each entry.
+ * Filters an array by calling the given condition callback for each entry.
  *
- * @param {array} sourceArray - The to be filtered array.
+ * @param {array} sourceArray - The array to be filtered.
  * @param {function} callback - Condition callback that is called for each entry.
  *
  * @returns {*[]}
