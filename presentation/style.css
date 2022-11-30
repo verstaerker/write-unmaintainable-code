@@ -22,3 +22,20 @@ ul {
 .slidev-vclick-hidden.hide-for-real {
   display: none;
 }
+
+.hidden-link {
+  text-decoration: none;
+  border: none !important;
+}
+
+.note * {
+  font-size: 1em;
+}
+
+.note strong {
+  color: coral;
+}
+
+.note em {
+  color: cornflowerblue;
+}

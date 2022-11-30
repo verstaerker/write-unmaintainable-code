@@ -10,13 +10,16 @@ layout: center
 <img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Guten Abend alle zusammen
+
+Schön das ihr hier zur valantic gefunden habt.
 -->
 
 ---
 layout: image-left
-image: ./assets/patric.jpg
+image: /assets/patric.jpg
 ---
+
 <picture style="display: block; margin-bottom: 3vh;">
  <source media="prefers-color-scheme: dark" src="/assets/logo-valantic-white.svg">
  <source media="prefers-color-scheme: light" src="/assets/logo-valantic.svg">
@@ -30,22 +33,56 @@ Senior Frontend Developer and Teamlead
 
 <ul style="display: flex; align-items:center; list-style: none; padding: 0; margin: 12vh 0 0 0; gap: 1vw;">
   <li style="margin: 0; padding: 0;">🎲</li>
+  <li style="margin: 0; padding: 0;">👩🏽‍❤️‍👨🏻</li>
+  <li style="margin: 0; padding: 0;">
+    <img src="/assets/netflix.svg" style="width: 1em; height: auto">
+  </li>
   <li style="margin: 0; padding: 0;">🏃🏻‍♂️</li>
   <li style="margin: 0; padding: 0;">🧘🏻‍♂️</li>
-  <li style="margin: 0; padding: 0;">📺</li>
+  <li style="margin: 0; padding: 0;">
+    <img src="/assets/vue.svg" style="width: 1em; height: auto">
+  </li>
 </ul>
 
 <ul style="list-style: none; padding: 0; margin: 4vh 0 0 0; gap: 1vw; font-size: 0.8em;">
   <li style="margin: 0; padding: 0 0 1vh 0;">
-    <a href="https://github.com/patric-eberle">https://github.com/patric-eberle</a>
+    <a class="hidden-link" href="https://github.com/patric-eberle">https://github.com/patric-eberle</a>
   </li>
   <li style="margin: 0; padding: 0 0 1vh 0;">
-    <a href="https://www.linkedin.com/in/patric-eberle-22518911a">https://www.linkedin.com/in/patric-eberle-22518911a</a>
+    <a class="hidden-link" href="https://www.linkedin.com/in/patric-eberle-22518911a">https://www.linkedin.com/in/patric-eberle-22518911a</a>
   </li>
   <li style="margin: 0; padding: 0 0 1vh 0;">
-    <a href="mailto:patric.eberle@cec.valantic.com">patric.eberle@cec.valantic.com</a>
+    <a class="hidden-link" href="mailto:patric.eberle@cec.valantic.com">patric.eberle@cec.valantic.com</a>
   </li>
 </ul>
+
+<!--
+Mein Name ist Patric Eberle
+
+Ich bin
+- **Senior Frontend Developer**
+- **Lead** von einem 5 Köpfigen Frontendteam beim Valantic
+- **seit 2016** bei valantic
+
+In meiner Freizeit
+- mit Freunden für einen **Strategiespieleabend** treffen
+- Geniesse ich die Zeit mit meiner **Partnerin**
+- Verbringe ich zu viel Zeit auf **Netflix**
+- **Laufe** ich gerne
+- habe ich **Yoga** entdeckt
+- bin ich **Vue Enthusiast**
+
+Meine **Kontaktmöglichkeiten** verraten es schon:
+Ich **bin kein sozialer Mensch**.
+
+Danken möchte ich auch **Mathias Ober**,
+der mich nicht nur bei der Umsetzung,
+
+sondern **in der Vergangenheit** auch mit
+**diversen inspierierenden Beispielen** unterstütz hat.
+
+**Ah Mist** ... dass wollten wir ja gar nicht erwähnen 😬
+-->
 
 ---
 layout: center
@@ -55,17 +92,36 @@ layout: center
 <img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+In meinem Talk geht es um das Thema
+welche Praktiken ihr anwenden könnt,
+
+um euch **als Entwickler
+unentbehrlich zu machen**.
+
+Sprich, wie schreibt man Code,
+den im **Optimalfall nur ihr versteht**.
 -->
 
 ---
 layout: center
-class: 'text-center'
+class: text-center
 ---
 
 # Your worst enemies
 
 <img src="/assets/copyrighted/thanos.jpg" style="width: 80%; height: auto; display: block; margin: auto;">
+
+<!--
+**Bevor** wir aber **einsteigen**
+
+müssen wir uns mit **unseren Gegenspielern**
+vertraut machen, die sich **für ein 
+geordnetes Universum** einsetzen
+
+uns aber **beim Schreiben** unseres
+**professionellen Codes in die Quere**
+kommen könnten.
+-->
 
 ---
 layout: center
@@ -92,6 +148,22 @@ info: Prettier 2
   <li v-click>Supports Git Hooks</li>
   <li v-click>Supports CI</li>
 </ul>
+
+<!--
+Prettier ist
+
+- **rechthaberischer** Code Formatierer<br>
+*Kein Mitspracherecht, etwas für Amateure*
+
+- **Automatisiert** das anwenden von Codestyles<br>
+*Kontrollverlust über eigenen Code*
+
+- Kann in **Git Hooks** ausgeführt werden<br>
+*Code wird einfach überschrieben*
+
+- Kann in **Continious Integration Pipelines** ausgeführt werden<br>
+*Vortlaufende Integration, Nicht angepasste Code führt zum Abbruch der Pipeline*
+-->
 
 ---
 layout: center
@@ -120,6 +192,20 @@ info: ESLint 2
   <li v-click>Supports CI</li>
 </ul>
 
+<!--
+- **Zwingt** sogenannte **"Best Practices"** auf<br>
+*Anfänger haben mitspracherecht*
+
+
+- Setzt **Codestyle-Standards** durch<br>
+*Meine Kreativität wird unterdrück, ich bin eingeschränkt*
+
+- **Automatische Korrektur**<br>
+*Kann von jedem Anfänger ausgeführt werden*
+
+- Kann ebenfalls in den **Git Hooks und CI Pipelines** ausgeführt werden
+-->
+
 ---
 layout: center
 class: 'text-center'
@@ -144,6 +230,17 @@ info: TypeScript 2
   <li v-click>Enforces strict types</li>
   <li v-click>Improves code hinting</li>
 </ul>
+
+<!--
+- Ein **Superset von JS**
+*"Erweitert" JS mit Typisierung und einigen anderen Besonderheiten*
+
+- *Erzwingt spezifische Typen*
+*Verhindert "ungültige" Typen und mehrfache Verwenden von Variablen*
+
+- Unterstütz IDE beim Anzeigen von *Code-Hinweisen*
+*Selbst Unerfahren glauben, komplexe Software bedienen zu können, Code dokumentiert sich selbst*
+-->
 
 ---
 layout: center
@@ -180,13 +277,42 @@ info: IDE 2
   <li v-click>Spell checking</li>
 </ul>
 
+<!--
+IDEs
+
+- **Vervollständigungshilfe**
+*Unterstützen unerfahrene Entwickler beim Ergänzen von bestehendem Code*
+
+- **Code Formatierung**
+*Kann Detailarbeit innert Sekunden über den Haufen werfen*
+
+- **Typen Informationen**
+*Versuchen automatisiert Informationen über den Code zu extrahieren*
+
+- **Code Empfehlungen/Dokumentation**
+*Gibt Unerfahrenen Hintergrundinformationen zu unbekannten Eigenschaften*
+
+- **Zu Definitionen und Verwendungen springen**
+*Erlaubt es Anfängern sich im Code zu bewegen als würden sie sich auskennen*
+
+- **Rechtschreibprüfung**
+*Fügt störende, optische Elemente zum Code hinzu*
+-->
+
 ---
 layout: center
 info: Fight
+class: text-center
 ---
 
 <h1>How to fight enemies?</h1>
 <img src="https://media.giphy.com/media/WwC5VAvhHoH7EjCpPz/giphy.gif">
+
+<!--
+Was kannst du
+**gegen** diese **Abnormalitäten**
+unternehmen?
+-->
 
 ---
 layout: center
@@ -202,14 +328,35 @@ info: Fight
   <li v-click>Use your own setup</li>
 </ul>
 
+<!--
+- Ignoriere gezielt **Installationsinstruktionen**
+*Git Hooks, Scripts und Pipelines manipulieren*
+
+- *Git Hooks* beim Commit *unterbinden*
+
+- **Pipelines** beim Mergen **ignorieren**
+*Achte darauf, dass du Adminrechte zu Beginn des Projektes beantragst*
+
+- Für **Diskussionen** mit Anfängern und Besserwissern **wapnen**
+*Suche stichfeste, nicht wiederlegbare Argumente für
+Diskussionen, im Notfall ein Streitgespräch beginnen*
+
+- Eigenes **Softwaresetup** verwenden
+*Dabei geziehlt Projektvorgaben und Best Practices ignorieren*
+-->
+
 ---
 layout: center
-class: 'text-center'
+class: text-center
 info: Weapons
 ---
 
 <h1>Hackers: choose your weapons!</h1>
 <img src="https://media.giphy.com/media/1eEv7v51FEI3L54jpr/giphy.gif">
+
+<!--
+Jetzt wird es **endlich Zeit einzutauchen**!
+-->
 
 ---
 layout: center
@@ -240,13 +387,40 @@ function filter(sourceArray, callback) {
 }
 ```
 
+<!--
+**Beispielcode**
+
+Eine Array **Filtermethode**
+
+Gibt es zwar **nativ**, aber es **immer gut eigene Methoden für generelle Prozesse** zu schreiben
+
+- **Dokumentation**
+- Erwartet **2 Variablen**
+- Methode **iteriert** über Einträge
+- Ruft für jeden Eintrag die **Callback** Funktion auf
+- Gibt das **reduzierte Array zurück**
+-->
+
 ---
 layout: center
-class: 'text-center'
+class: text-center
 info: Weapons
 ---
 
 <h1>Naming</h1>
+
+<!--
+Die **Basis, wie jeder professionelle Entwickler weiss**, ist die Benennung von Code Elementen.
+
+Hier haben wir die **grösste, kreative Freiheit**.
+
+Achte darauf, dass du **Code für**
+
+- **dich**
+- **Maschinen bzw. Browser**
+
+die **Lesbarkeit für andere Entwickler bewusst ignorieren**!
+-->
 
 ---
 layout: two-cols
@@ -292,7 +466,17 @@ function filter(sourceArray, callback) {
 ```
 
 <!--
-Note: Depending on your language some of these options are not valid. But you can still use them in your comments!
+Achtung: basierend auf der verwendeten **Programmiersprache** sind einige der Empfehlungen **ggf. nicht anwendbar**.
+
+- **Einzelne Buchstaben**
+- **Symbole & Sonderzeichen**
+- **Sonderzeichen, die 2 Tastendrücke benötigen**
+- **Emojis**
+
+
+Könnten **alles mit einzelnen Buchstaben** ersetzten.
+
+Aus **Gründen der Nachvollziehbarkeit** beschränken wir uns auf "index"
 -->
 
 ---
@@ -394,6 +578,20 @@ function filter(sourceArray, callback) {
 }
 ```
 
+<!--
+Wir können einfach **i** verwenden.
+
+Besser wäre ein **nicht verfolgbarer Buchstabe** z.B. **l**oop, **d**urchgang oder **v**ariable
+
+Oder wir können einen **Akzent** verwenden
+
+_
+
+Auch **Abkürzungen** sind eine sehr gute Idee
+
+Im besten Fall hat die Abkürzung **mehrere Bedeutungen**
+-->
+
 ---
 layout: two-cols
 info: Naming 2.2
@@ -449,6 +647,15 @@ function filter(sourceArray, callback) {
   return res;
 }
 ```
+
+<!--
+Ebenfalls sehr wirkungsvoll
+
+- **Fremdsprachen** verwenden
+- Lokale **Dialekte**
+- **Mehrdeutige** Wörter
+- **Erfundene oder fiktionale** Wörter
+-->
 
 ---
 layout: two-cols
@@ -506,6 +713,16 @@ function filter(lischtä, thanos) {
 }
 ```
 
+<!--
+**Rechtschreibfehler** einbauen
+
+Dadurch lassen sich auch **Variationen von Variablennamen** generieren
+
+**Verwechslungsgefahr** für Elemente steigt bei Amateuren
+
+Erzeugt **Unsicherheit**
+-->
+
 ---
 layout: two-cols
 info: Naming 4.1
@@ -562,6 +779,13 @@ function filter(lischtä, thanos) {
   return res;
 }
 ```
+
+<!--
+Verwende **zufällige Gross-/Kleinbuchstabenkombinationen**
+
+**Lesbarkeit** für unerfahrene Entwickler **nimmt exponentiel ab**
+-->
+
 ---
 layout: two-cols
 info: Naming 4.1
@@ -666,9 +890,15 @@ function filTerArRayelEmentS(lischtä, thanos) {
 }
 ```
 
+<!--
+So, dass **sieht schon viel besser** aus
+
+Code, bei dem **Anfänger merkliche Schwierigkeiten** haben werden
+-->
+
 ---
 layout: center
-class: 'text-center'
+class: text-center
 info: Comments
 ---
 
@@ -681,11 +911,21 @@ info: Comments
 ```
 
 </div>
+
+<!--
+Kommentare
+
+Werden **oft von anderen eingefordert**
+
+**Profis kennen ihren Code** und brauchen keine "Hilfestellung"
+
+Maxime: **Kommentiere alles Selbsterklärende, ignoriere alles Komplexe**
+-->
+
 ---
 layout: center
 info: Comments 1.1
 ---
-
 
 ```js
 /**
@@ -710,6 +950,10 @@ function filTerArRayelEmentS(lischtä, thanos) {
   return res;
 }
 ```
+
+<!--
+Wir **wenden unsere Verbesserung** auf das Resultat aus dem **letzten Kapitel** an
+-->
 
 ---
 layout: two-cols
@@ -768,7 +1012,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -788,6 +1032,11 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Verwende wenn möglich **irreführende, sinnlose oder lügende** Kommentare
+-->
+
 ---
 layout: two-cols
 info: Comments 3.1
@@ -796,7 +1045,7 @@ info: Comments 3.1
 <h1>Comments</h1>
 
 <div v-click-hide class=" hide-for-real" style="padding-right: 2vw;">
-  <h2>Write lying or nonsense comments</h2>
+  <h2>Write lying or nonsensical comments</h2>
   <br>&nbsp;
   <br>&nbsp;
 
@@ -827,7 +1076,7 @@ info: Comments 3.1
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -855,7 +1104,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -880,6 +1129,12 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Dokumentiere das **Offensichtliche**
+
+Beschreibe das **Wie**, **nicht das Warum**
+-->
 
 ---
 layout: two-cols
@@ -917,7 +1172,7 @@ info: Comments 4.1
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -950,7 +1205,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -974,6 +1229,10 @@ function filTerArRayelEmentS(lischtä, thanos) {
 }
 ```
 </div>
+
+<!--
+Verwende **Kommentare, anstelle von aussagekräftigen Variablennamen**
+-->
 
 ---
 layout: two-cols
@@ -1024,7 +1283,7 @@ info: Comments 5.1
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -1057,7 +1316,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -1085,6 +1344,10 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Nutze **wahllose Kommentarformate**
+-->
 
 ---
 layout: two-cols
@@ -1137,7 +1400,7 @@ info: Comments 5.1
  * Get keys of object.
  *
  * @param {array} lischtä - The array to be filtered.
- * @param {function} thanos - Let him smash your team members.
+ * @param {function} thanos - Let him crush your team members.
  *
  * @returns {*[]}
  */
@@ -1173,7 +1436,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1201,6 +1464,13 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Abschliessend
+
+- JSDoc lückenhaft verwenden
+-->
+
 ---
 layout: two-cols
 info: Naming 4.1
@@ -1242,7 +1512,7 @@ function filter(sourceArray, callback) {
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1271,13 +1541,17 @@ function filTerArRayelEmentS(lischtä, thanos) {
 
 ---
 layout: center
-class: 'text-center'
+class: text-center
 info: Hints
 ---
 
 <h1>Additional hints</h1>
 
 <img src="https://media.giphy.com/media/mxQUQbIjXMSwo/giphy.gif">
+
+<!--
+**Tipps für Fortgeschrittene**
+-->
 
 ---
 layout: two-cols
@@ -1320,7 +1594,7 @@ info: Hints 1.1
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1356,7 +1630,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1386,6 +1660,15 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Schreibe if/else Anweisungen so kompliziert wie möglich
+
+- **Doppelte Verneinung**
+- **Inline If/Else** statt **Or** verwenden
+- Komplexe Prüfungen **niemals** aufteilen
+-->
+
 ---
 layout: two-cols
 info: Comments 2.1
@@ -1438,7 +1721,7 @@ info: Comments 2.1
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1476,7 +1759,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1498,6 +1781,15 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+**Verzichte* so oft wie möglich **auf Zeilenumbrüche**
+
+Mit einem **ultraweiten Monitor** kannst du so mehr Code auf dem Bildschirm darstellen als **minderbemittelte Entwickler**
+
+Das Resultat seht ihr auf diesem **Mini-Fernseher** leider nicht
+-->
+
 ---
 layout: two-cols
 info: Comments 3.1
@@ -1539,7 +1831,7 @@ info: Comments 3.1
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1569,7 +1861,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1593,6 +1885,15 @@ function filTerArRayelEmentS(lischtä, thanos) {
 ```
 
 </div>
+
+<!--
+Spare **Tastenanschläge**
+
+Nur **Profis wissen**, wo diese Zeichen zwingend zu verwenden sind
+
+**Maskiere Ausführungsabfolgen**
+-->
+
 ---
 layout: two-cols
 info: Comments 4.1
@@ -1609,6 +1910,7 @@ info: Comments 4.1
   const a = "foo"
 
   const b = 'baa'
+  const c = `bar`
   if (!c)   return
   ```
 </div>
@@ -1622,7 +1924,7 @@ info: Comments 4.1
  * Get_keys of Obj.
  *
  * @param {array} lischtä - The to be Filtred Array.
- * @param {Function} thanos - Let him SMASH your team members.
+ * @param {Function} thanos - Let him CRUSH your team members.
  *
  * @returns {*[]}
  */
@@ -1656,7 +1958,7 @@ function filTerArRayelEmentS(lischtä, thanos) {
  * 
  * 
  * @param   {array} lischtä - The to be Filtred Array.
- * @param {Function } thanos - Let him SMASH your team members.
+ * @param {Function } thanos - Let him CRUSH your team members.
  * 
  * @returns { *[]}
  */
@@ -1681,6 +1983,13 @@ function filTerArRayelEmentS(lischtä,     thanos) {
 ```
 
 </div>
+
+<!--
+Wahllose **Zeilenabstände und Anführungszeichen**
+
+**Profis können komplexen Code lesen**
+-->
+
 ---
 layout: two-cols
 info: Naming 4.1
@@ -1724,7 +2033,7 @@ function filter(sourceArray, callback) {
  *
  *
  * @param   {array} lischtä - The to be Filtred Array.
- * @param {Function } thanos - Let him SMASH your team members.
+ * @param {Function } thanos - Let him CRUSH your team members.
  *
  * @returns { *[]}
  */
@@ -1747,6 +2056,12 @@ function filTerArRayelEmentS(lischtä,     thanos) {
   return a // Return a.
 }
 ```
+
+<!--
+Ein **Meisterwerk**
+
+**Flüche und emotionale Ausbrüche von Amateur-Kollegen** unterstreichen die professionelle Qualität des Codes
+-->
 
 ---
 layout: center
