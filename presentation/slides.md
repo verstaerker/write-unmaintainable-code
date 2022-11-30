@@ -10,9 +10,11 @@ layout: center
 <img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
-Guten Abend alle zusammen
+**Vielen Dank** für eure Aufmerksamkeit
 
-Schön das ihr hier zur valantic gefunden habt.
+Wer sich **gut uterhalten** gefühlt hat, **darf sich gerne bei uns bewerben**
+
+Wer sich **Inspiriert** gefühlt hat **lieber nicht** 😉
 -->
 
 ---
@@ -2072,3 +2074,19 @@ info: Hints
 <h1>WTFAA****RG!</h1>
 
 <img src="https://media.giphy.com/media/LTM9zeisAfX9xQbz8Y/giphy.gif">
+
+---
+layout: center
+class: text-center
+info: Hints
+---
+
+<h1>Thank you!</h1>
+
+<!--
+**Herzlichen Dank** für eure Aufmerksamkeit
+
+Wer sich **gut unterhalten** gefühlt hat, **darf sich gerne bei uns bewerben**
+
+Wer sich **inspiriert gefühlt** hat, **lieber nicht** 😉
+-->
