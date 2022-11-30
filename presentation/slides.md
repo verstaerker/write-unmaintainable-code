@@ -10,11 +10,9 @@ layout: center
 <img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
-**Vielen Dank** für eure Aufmerksamkeit
+Guten Abend alle zusammen
 
-Wer sich **gut uterhalten** gefühlt hat, **darf sich gerne bei uns bewerben**
-
-Wer sich **Inspiriert** gefühlt hat **lieber nicht** 😉
+Schön das ihr hier zur valantic gefunden habt.
 -->
 
 ---
