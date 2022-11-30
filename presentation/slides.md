@@ -232,13 +232,13 @@ info: TypeScript 2
 </ul>
 
 <!--
-- Ein **Superset von JS**
+- Ein **Superset von JS**<br>
 *"Erweitert" JS mit Typisierung und einigen anderen Besonderheiten*
 
-- *Erzwingt spezifische Typen*
+- *Erzwingt spezifische Typen*<br>
 *Verhindert "ungültige" Typen und mehrfache Verwenden von Variablen*
 
-- Unterstütz IDE beim Anzeigen von *Code-Hinweisen*
+- Unterstütz IDE beim Anzeigen von *Code-Hinweisen*<br>
 *Selbst Unerfahren glauben, komplexe Software bedienen zu können, Code dokumentiert sich selbst*
 -->
 
@@ -280,22 +280,22 @@ info: IDE 2
 <!--
 IDEs
 
-- **Vervollständigungshilfe**
+- **Vervollständigungshilfe**<br>
 *Unterstützen unerfahrene Entwickler beim Ergänzen von bestehendem Code*
 
-- **Code Formatierung**
+- **Code Formatierung**<br>
 *Kann Detailarbeit innert Sekunden über den Haufen werfen*
 
-- **Typen Informationen**
+- **Typen Informationen**<br>
 *Versuchen automatisiert Informationen über den Code zu extrahieren*
 
-- **Code Empfehlungen/Dokumentation**
+- **Code Empfehlungen/Dokumentation**<br>
 *Gibt Unerfahrenen Hintergrundinformationen zu unbekannten Eigenschaften*
 
-- **Zu Definitionen und Verwendungen springen**
+- **Zu Definitionen und Verwendungen springen**<br>
 *Erlaubt es Anfängern sich im Code zu bewegen als würden sie sich auskennen*
 
-- **Rechtschreibprüfung**
+- **Rechtschreibprüfung**<br>
 *Fügt störende, optische Elemente zum Code hinzu*
 -->
 
@@ -309,9 +309,7 @@ class: text-center
 <img src="https://media.giphy.com/media/WwC5VAvhHoH7EjCpPz/giphy.gif">
 
 <!--
-Was kannst du
-**gegen** diese **Abnormalitäten**
-unternehmen?
+Was kannst du **gegen** diese **Abnormalitäten** unternehmen?
 -->
 
 ---
@@ -329,19 +327,19 @@ info: Fight
 </ul>
 
 <!--
-- Ignoriere gezielt **Installationsinstruktionen**
+- Ignoriere gezielt **Installationsinstruktionen**<br>
 *Git Hooks, Scripts und Pipelines manipulieren*
 
 - *Git Hooks* beim Commit *unterbinden*
 
-- **Pipelines** beim Mergen **ignorieren**
+- **Pipelines** beim Mergen **ignorieren**<br>
 *Achte darauf, dass du Adminrechte zu Beginn des Projektes beantragst*
 
-- Für **Diskussionen** mit Anfängern und Besserwissern **wapnen**
+- Für **Diskussionen** mit Anfängern und Besserwissern **wapnen**<br>
 *Suche stichfeste, nicht wiederlegbare Argumente für
 Diskussionen, im Notfall ein Streitgespräch beginnen*
 
-- Eigenes **Softwaresetup** verwenden
+- Eigenes **Softwaresetup** verwenden<br>
 *Dabei geziehlt Projektvorgaben und Best Practices ignorieren*
 -->
 
