@@ -4,10 +4,11 @@ background: none
 highlighter: shiki
 lineNumbers: false
 layout: center
+download: true
 ---
 
 #
-<img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
+<img src="/public/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
 Guten Abend alle zusammen
@@ -17,30 +18,28 @@ Schön das ihr hier zur valantic gefunden habt.
 
 ---
 layout: image-left
-image: /assets/patric.jpg
+image: patric.jpg
 ---
 
 <picture style="display: block; margin-bottom: 3vh;">
- <source media="prefers-color-scheme: dark" src="/assets/logo-valantic-white.svg">
- <source media="prefers-color-scheme: light" src="/assets/logo-valantic.svg">
- <img style="width: 5vw; height: auto;" src="/assets/logo-valantic-white.svg">
+ <source media="prefers-color-scheme: dark" src="/public/logo-valantic-white.svg">
+ <source media="prefers-color-scheme: light" src="/public/logo-valantic.svg">
+ <img style="width: 5vw; height: auto;" src="/public/logo-valantic-white.svg">
 </picture>
 <h1>Patric Eberle</h1>
 
 Senior Frontend Developer and Teamlead
 
-
-
 <ul style="display: flex; align-items:center; list-style: none; padding: 0; margin: 12vh 0 0 0; gap: 1vw;">
   <li style="margin: 0; padding: 0;">🎲</li>
   <li style="margin: 0; padding: 0;">👩🏽‍❤️‍👨🏻</li>
   <li style="margin: 0; padding: 0;">
-    <img src="/assets/netflix.svg" style="width: 1em; height: auto">
+    <img src="/public/netflix.svg" style="width: 1em; height: auto">
   </li>
   <li style="margin: 0; padding: 0;">🏃🏻‍♂️</li>
   <li style="margin: 0; padding: 0;">🧘🏻‍♂️</li>
   <li style="margin: 0; padding: 0;">
-    <img src="/assets/vue.svg" style="width: 1em; height: auto">
+    <img src="/public/vue.svg" style="width: 1em; height: auto">
   </li>
 </ul>
 
@@ -89,7 +88,7 @@ layout: center
 ---
 
 #
-<img src="/assets/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
+<img src="/public/title.png" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
 In meinem Talk geht es um das Thema
@@ -109,7 +108,7 @@ class: text-center
 
 # Your worst enemies
 
-<img src="/assets/copyrighted/thanos.jpg" style="width: 80%; height: auto; display: block; margin: auto;">
+<img src="/public/thanos.jpg" style="width: 80%; height: auto; display: block; margin: auto;">
 
 <!--
 **Bevor** wir aber **einsteigen**
@@ -129,7 +128,7 @@ class: 'text-center'
 info: Prettier 1
 ---
 
-<img src="/assets/prettier.svg">
+<img src="/public/prettier.svg">
 
 ---
 layout: two-cols
@@ -137,7 +136,7 @@ info: Prettier 2
 ---
 
 <div class="center-horizontal center-vertical">
-  <img src="/assets/prettier2.svg" style="width: 9vw; height: auto;">
+  <img src="/public/prettier2.svg" style="width: 9vw; height: auto;">
 </div>
 
 ::right::
@@ -171,7 +170,7 @@ class: 'text-center'
 info: ESLint 1
 ---
 
-<img src="/assets/eslint.svg" style="width: 25vw; height: auto;">
+<img src="/public/eslint.svg" style="width: 25vw; height: auto;">
 
 ---
 layout: two-cols
@@ -179,7 +178,7 @@ info: ESLint 2
 ---
 
 <div class="center-horizontal center-vertical">
-  <img src="/assets/eslint2.svg" style="width: 8vw; height: auto;">
+  <img src="/public/eslint2.svg" style="width: 8vw; height: auto;">
 </div>
 
 ::right::
@@ -212,7 +211,7 @@ class: 'text-center'
 info: TypeScript 1
 ---
 
-<img src="/assets/typescript.svg" style="width: 10vw; height: auto;">
+<img src="/public/typescript.svg" style="width: 10vw; height: auto;">
 
 ---
 layout: two-cols
@@ -220,7 +219,7 @@ info: TypeScript 2
 ---
 
 <div class="center-horizontal center-vertical">
-  <img src="/assets/typescript.svg" style="width: 8vw; height: auto;">
+  <img src="/public/typescript.svg" style="width: 8vw; height: auto;">
 </div>
 
 ::right::
@@ -249,9 +248,9 @@ info: IDE 1
 ---
 
 <div style="display: flex; gap: 2vw;">
-  <img src="/assets/vscode.svg" style="width: 3vw; height: auto;">
-  <img src="/assets/phpstorm.svg" style="width: 3vw; height: auto;">
-  <img src="/assets/webstorm.svg" style="width: 3vw; height: auto;">
+  <img src="/public/vscode.svg" style="width: 3vw; height: auto;">
+  <img src="/public/phpstorm.svg" style="width: 3vw; height: auto;">
+  <img src="/public/webstorm.svg" style="width: 3vw; height: auto;">
   <span style="font-size: 3vw;">…</span>
 </div>
 
@@ -261,9 +260,9 @@ info: IDE 2
 ---
 
 <div class="center-horizontal center-vertical" style="gap: 3vh;">
-  <img src="/assets/vscode.svg" style="width: 6vh; height: auto;">
-  <img src="/assets/phpstorm.svg" style="width: 6vh; height: auto;">
-  <img src="/assets/webstorm.svg" style="width: 6vh; height: auto;">
+  <img src="/public/vscode.svg" style="width: 6vh; height: auto;">
+  <img src="/public/phpstorm.svg" style="width: 6vh; height: auto;">
+  <img src="/public/webstorm.svg" style="width: 6vh; height: auto;">
 </div>
 
 ::right::
